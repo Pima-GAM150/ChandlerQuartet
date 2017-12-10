@@ -8,7 +8,7 @@ public class Hit : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     { 
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "Player(Clone)")
         {
             Destroy(col.gameObject);
 
