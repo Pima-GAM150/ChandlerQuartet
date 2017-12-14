@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Hit : MonoBehaviour
 {
-	public Deaths deaths;
+	
 
     void OnCollisionEnter2D(Collision2D col)
     { 

@@ -37,13 +37,18 @@ public class Shoot : MonoBehaviour {
             if (shootBullet != null)
             {
                 Vector2 bulletScreenPos = (shootBullet.transform.position);
+            }
+            else
+            {
+                return;
+            }
                 
                 //deleting the prefab
-                if (bulletScreenPos.y > Screen.height && bulletScreenPos.x> Screen.width|| bulletScreenPos.y <=-1000 && bulletScreenPos.x<= -1000 )
+               /* if (bulletScreenPos.y > Screen.height && bulletScreenPos.x> Screen.width|| bulletScreenPos.y <=-1000 && bulletScreenPos.x<= -1000 )
                 {
                     DestroyObject(shootBullet);
                     projectiles.Remove(shootBullet);
-                }
+                }*/
 
                 
             }
@@ -52,4 +57,4 @@ public class Shoot : MonoBehaviour {
 
 
     }
-    }
+    
