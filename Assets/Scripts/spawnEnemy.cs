@@ -15,7 +15,7 @@ public class spawnEnemy : MonoBehaviour
         Debug.Log("Waiting for " + seconds + " seconds");
 
        yield return new WaitForSeconds(seconds);
-       Instantiate(enemy, new Vector2(Random.Range(-200, 200), Random.Range(-110, 110)),  Quaternion.identity);
+       Instantiate(enemy, new Vector2(Random.Range(-1, 1), Random.Range(-1, 1)),  Quaternion.identity);
  
         isSpawning = false;
     }
