@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Hit : MonoBehaviour
+public class Hit : Deaths
 {
-	
+    public Deaths deaths;
 
     void OnCollisionEnter2D(Collision2D col)
     { 

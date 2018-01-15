@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Reload : MonoBehaviour
 {
-    
+    public Deaths deaths;
     public int CurrentLevel = 0;
     public static int maxlevel = 100;
 
@@ -17,6 +17,10 @@ public class Reload : MonoBehaviour
             if (CurrentLevel < maxlevel)
             {
                 SceneManager.LoadScene(CurrentLevel++);
+                GameObject deathsManagerObject = GameObject.FindGameObjectWithTag("deaths");
+                Deaths deaths = deathsManagerObject.GetComponent<Deaths>();
+
+                deaths.Increase();
             }
 
 
