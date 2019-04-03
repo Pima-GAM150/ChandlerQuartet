@@ -25,6 +25,6 @@ public class Deaths : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-		text.text = "Deaths:" + (deaths);
+	//	text.text = "Deaths:" + (deaths);
 	}
 }

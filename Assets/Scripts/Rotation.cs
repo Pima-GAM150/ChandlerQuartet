@@ -6,7 +6,7 @@ public class Rotation : MonoBehaviour {
 
     public float rotSpeed;
     public float maxRotSpeed = 100f;
-    float currentRotation = 0f;
+    public float currentRotation = 0f;
 
     void Update()
     {

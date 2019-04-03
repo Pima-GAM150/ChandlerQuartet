@@ -9,6 +9,7 @@ public class Shoot : MonoBehaviour {
     private List<GameObject> projectiles = new List<GameObject>();
     public Collider2D enemyPreFab;
     public float rotateSpeed;
+    Vector2 direction;
     // Use this for initialization
     void Start() {
        
@@ -28,9 +29,10 @@ public class Shoot : MonoBehaviour {
             projectiles.Add(bullet);
             
 
-          
+
 
         }
+        
         for (int i = 0; i < projectiles.Count; i++)
         {
             GameObject shootBullet = projectiles[i];
@@ -42,8 +44,8 @@ public class Shoot : MonoBehaviour {
             {
                 return;
             }
-                
-                //deleting the prefab
+
+                //*-deleting the prefab
                /* if (bulletScreenPos.y > Screen.height && bulletScreenPos.x> Screen.width|| bulletScreenPos.y <=-1000 && bulletScreenPos.x<= -1000 )
                 {
                     DestroyObject(shootBullet);

@@ -4,18 +4,17 @@ using UnityEngine.UI;
 
 public class Hit : Deaths
 {
-    public Deaths deaths;
+
 
     void OnCollisionEnter2D(Collision2D col)
     { 
-        if (col.gameObject.name == "Player(Clone)")
+        if (col.gameObject.tag == "Player")
         {
             Destroy(col.gameObject);
 
-			GameObject deathsManagerObject = GameObject.FindGameObjectWithTag ("deaths");
-			Deaths deaths = deathsManagerObject.GetComponent<Deaths> ();
+		
 
-			deaths.Increase(); 
+		
         }
     }
 }

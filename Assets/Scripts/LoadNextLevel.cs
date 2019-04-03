@@ -12,7 +12,7 @@ public class  LoadNextLevel : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         
-        if (col.gameObject.name == "Player(Clone)")
+        if (col.gameObject.tag == "Player")
         {
             if (CurrentLevel < maxlevel)
             {
